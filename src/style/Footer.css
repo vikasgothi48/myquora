@@ -1,0 +1,24 @@
+.footer-body {
+  background-color: white;
+  margin-top: 15px;
+  display: flex;
+  padding-left: 20px;
+  height: 50px;
+  padding-top: 20px;
+}
+
+.github {
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.linkedin {
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+.text-footer {
+  font-size: 18px;
+  font-weight: 600;
+  color: brown;
+}

@@ -1,0 +1,13 @@
+.signUp-container {
+  margin: auto;
+}
+.button-signIn {
+  margin-left: 0%;
+}
+@media (max-width: 1036px) {
+  .signUp-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+}

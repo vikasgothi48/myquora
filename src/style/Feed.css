@@ -1,0 +1,25 @@
+.post-feed {
+  display: flex;
+  justify-content: space-around;
+  min-height: 100vh;
+  /* background-color: rgb(83 154 203); */
+  /* background-color: rgb(234, 228, 228); */
+  background-color: #f5efe7;
+  gap: 20px;
+}
+
+.left-container {
+  width: 65%;
+}
+.right-container {
+  width: 35%;
+}
+
+@media (max-width: 515px) {
+  .right-container {
+    display: none;
+  }
+  .left-container {
+    width: 90%;
+  }
+}

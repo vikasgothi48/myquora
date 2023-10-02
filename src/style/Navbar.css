@@ -1,0 +1,152 @@
+.quora-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+  background-color: white;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  box-shadow: 0px 5px 8px -3px rgba(0, 0, 0, 0.5);
+}
+
+.mobile-nav-avatar {
+  display: none;
+}
+
+.logo {
+  width: 155px;
+  background-color: white;
+  margin-right: 45px;
+}
+.logo-hanburge {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.questionss {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hamburgerMenu {
+  margin-left: 47px;
+}
+
+.search-box {
+  border: 2px solid lightgray;
+  padding: 5px;
+  border-radius: 5px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.search-box > input {
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  padding-top: 3px;
+  font-size: 16px;
+}
+
+button {
+  background-color: brown;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 16px;
+  border: none;
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: rgb(182, 105, 105);
+  cursor: pointer;
+}
+
+.hamburgerMenu {
+  display: none;
+}
+
+.see-questions {
+  display: none;
+}
+
+@media (max-width: 1036px) {
+  .mobile-nav-avatar {
+    display: none;
+  }
+  .nav-avatar {
+    display: none;
+  }
+  .see-questions {
+    display: none;
+  }
+  .mobile {
+    display: none;
+  }
+  .hamburgerMenu {
+    display: block;
+    margin-right: 15px;
+  }
+  .quora-container {
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+  }
+  .logo {
+    width: 150px;
+    margin-left: 10px;
+  }
+  .openMobileMenu {
+    display: block;
+  }
+
+  .logo-hanburge {
+    min-width: 100%;
+    justify-content: space-between;
+  }
+  .search-box {
+    font-size: 0.8rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 8px;
+  }
+
+  .quora-container.openMobileMenu .logo-hanburge {
+    width: fit-content;
+  }
+  .quora-container.openMobileMenu .search-box,
+  .quora-container.openMobileMenu .add-qustion,
+  .quora-container.openMobileMenu .ans-qustion,
+  .quora-container.openMobileMenu .nav-avatar,
+  .quora-container.openMobileMenu .quora-logo,
+  .quora-container.openMobileMenu .login {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 0.8rem;
+  }
+  .questionss {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 515px) {
+  .add-qustion button {
+    font-size: 11px;
+  }
+  .login > button {
+    font-size: 11px;
+  }
+  .quora-container.openMobileMenu .see-questions {
+    display: block;
+  }
+  .see-questions > button {
+    font-size: 11px;
+    margin-bottom: 7px;
+  }
+}
